@@ -19,8 +19,16 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ["./src/**"],
-        tasks: ['copy', 'sass', 'browserify']
+        files: ["./src/**/*.js"],
+        tasks: ['browserify']
+      },
+      html: {
+        files: ["./src/**/*.html"],
+        tasks: ['copy']
+      },
+      sass: {
+        files: ["./src/**/*.scss"],
+        tasks: ['sass']
       }
     },
     browserSync: {

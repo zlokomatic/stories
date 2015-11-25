@@ -1,5 +1,12 @@
 @import "bootstrap";
 
-#react {
-  color: blue;
+.StoriesList {
+  list-style: none;
+  width: 50%;
+
+  li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+  }
 }
